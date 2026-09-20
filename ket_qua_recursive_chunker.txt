@@ -1,0 +1,36 @@
+KẾT QUẢ CHẠY RECURSIVECHUNKER
+Ngày chạy: 2026-09-20
+
+Cấu hình
+- Chiến lược: RecursiveChunker
+- chunk_size: 500 ký tự
+- separators: ["\n\n", "\n", ". ", " ", ""]
+- Corpus: data (1)/chinh-sach-tmdt/
+- Số tài liệu: 10
+
+Kết quả kiểm thử
+- Lệnh: python -m pytest tests/test_solution.py -k RecursiveChunker -v
+- Kết quả: 4 passed, 38 deselected
+
+Kết quả runner trên corpus Shopee
+- chinh-sach-bao-hanh-san-pham.md: 12 chunks, trung bình 399.6, lớn nhất 496
+- chinh-sach-tra-hang-hoan-tien.md: 54 chunks, trung bình 367.0, lớn nhất 497
+- huong-dan-gui-yeu-cau-tra-hang.md: 7 chunks, trung bình 423.7, lớn nhất 497
+- phuong-thuc-gui-hang-va-phi-hoan-tra.md: 15 chunks, trung bình 425.8, lớn nhất 499
+- quan-ly-don-tra-hang-nguoi-ban.md: 10 chunks, trung bình 423.7, lớn nhất 496
+- quy-dinh-chung-tra-hang-hoan-tien.md: 16 chunks, trung bình 421.5, lớn nhất 492
+- quy-trinh-shopee-xu-ly-yeu-cau.md: 21 chunks, trung bình 405.3, lớn nhất 484
+- san-pham-han-che-tra-hang.md: 4 chunks, trung bình 470.5, lớn nhất 481
+- thoi-gian-nhan-tien-hoan.md: 11 chunks, trung bình 394.8, lớn nhất 494
+- tra-hang-do-doi-y.md: 19 chunks, trung bình 409.4, lớn nhất 490
+
+Tổng hợp
+- Tổng số chunk: 169
+- Độ dài trung bình: 399.2 ký tự
+- Chunk dài nhất: 499 ký tự
+- Chunk đúng giới hạn: 169/169 (100%)
+
+Nhận xét
+RecursiveChunker ưu tiên ranh giới đoạn, dòng, câu và từ, sau đó gom các mảnh nhỏ
+liền kề đến gần giới hạn 500 ký tự. Kết quả không có chunk vượt giới hạn và độ dài
+trung bình đạt khoảng 80% chunk_size, hạn chế hiện tượng sinh quá nhiều chunk vụn.

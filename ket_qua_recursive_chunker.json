@@ -1,0 +1,94 @@
+{
+  "strategy": "RecursiveChunker",
+  "run_date": "2026-09-20",
+  "configuration": {
+    "chunk_size": 500,
+    "separators": [
+      "\n\n",
+      "\n",
+      ". ",
+      " ",
+      ""
+    ],
+    "corpus": "data (1)/chinh-sach-tmdt/",
+    "document_count": 10
+  },
+  "tests": {
+    "command": "python -m pytest tests/test_solution.py -k RecursiveChunker -v",
+    "selected": 4,
+    "passed": 4,
+    "failed": 0,
+    "deselected": 38,
+    "duration_seconds": 0.03
+  },
+  "documents": [
+    {
+      "file": "chinh-sach-bao-hanh-san-pham.md",
+      "chunk_count": 12,
+      "average_length": 399.6,
+      "maximum_length": 496
+    },
+    {
+      "file": "chinh-sach-tra-hang-hoan-tien.md",
+      "chunk_count": 54,
+      "average_length": 367.0,
+      "maximum_length": 497
+    },
+    {
+      "file": "huong-dan-gui-yeu-cau-tra-hang.md",
+      "chunk_count": 7,
+      "average_length": 423.7,
+      "maximum_length": 497
+    },
+    {
+      "file": "phuong-thuc-gui-hang-va-phi-hoan-tra.md",
+      "chunk_count": 15,
+      "average_length": 425.8,
+      "maximum_length": 499
+    },
+    {
+      "file": "quan-ly-don-tra-hang-nguoi-ban.md",
+      "chunk_count": 10,
+      "average_length": 423.7,
+      "maximum_length": 496
+    },
+    {
+      "file": "quy-dinh-chung-tra-hang-hoan-tien.md",
+      "chunk_count": 16,
+      "average_length": 421.5,
+      "maximum_length": 492
+    },
+    {
+      "file": "quy-trinh-shopee-xu-ly-yeu-cau.md",
+      "chunk_count": 21,
+      "average_length": 405.3,
+      "maximum_length": 484
+    },
+    {
+      "file": "san-pham-han-che-tra-hang.md",
+      "chunk_count": 4,
+      "average_length": 470.5,
+      "maximum_length": 481
+    },
+    {
+      "file": "thoi-gian-nhan-tien-hoan.md",
+      "chunk_count": 11,
+      "average_length": 394.8,
+      "maximum_length": 494
+    },
+    {
+      "file": "tra-hang-do-doi-y.md",
+      "chunk_count": 19,
+      "average_length": 409.4,
+      "maximum_length": 490
+    }
+  ],
+  "summary": {
+    "total_chunks": 169,
+    "average_length": 399.2,
+    "maximum_length": 499,
+    "chunks_within_limit": 169,
+    "chunks_over_limit": 0,
+    "within_limit_percentage": 100.0
+  }
+}

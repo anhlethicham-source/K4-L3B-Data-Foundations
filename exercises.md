@@ -15,7 +15,7 @@ Không yêu cầu toán học — hãy giải thích về mặt khái niệm:
 
 > **Ghi kết quả vào:** Báo cáo — Phần 1 (Khởi động)
 
----
+--- Hai văn bản có độ tương tự cosine cao thường có nhiều ngữ nghĩa hoặc chủ đề chung, có thể có từ khóa chung hoặc là có ý nghĩa tương tự nhau. Ví dụ: Tôi là học sinh và tôi học lớp 7. hai câu có đôj tương tự thấp: Tôi là sinh viên và tôi thích hoạt hình. tại vì chúng không có chủ đề chung và không có từ khóa chung. độ tương tự cosine được ưu tiên hơn khoảng cách Euclid vì nó đo lường hướng của vector thay vì khoảng cách tuyệt đối, điều này giúp nó phù hợp hơn với các biểu diễn văn bản, nơi mà độ dài của văn bản có thể khác nhau nhưng ý nghĩa vẫn có thể tương tự.
 
 ### Bài tập 1.2 — Bài toán tính toán Chunking
 

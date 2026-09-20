@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-20T11:46:08+07:00",
+  "generated_at": "2026-09-20T12:09:15+07:00",
   "member_role": "R3 - Strategy",
   "strategy": "RecursiveChunker(chunk_size=500)",
-  "embedding_backend": "TF-IDF word+bigram fallback",
-  "embedding_provider": "fallback",
-  "mock_warning": "Local embedding unavailable: OSError: [Errno 22] Invalid argument",
+  "embedding_backend": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "embedding_provider": "local",
+  "mock_warning": null,
   "corpus_dir": "data (1)\\chinh-sach-tmdt",
   "top_k": 3,
   "chunks_per_file": {
@@ -39,24 +39,24 @@
             "chunk_id": "chinh-sach-tra-hang-hoan-tien#9",
             "doc_id": "chinh-sach-tra-hang-hoan-tien#9",
             "audience": "both",
-            "score": 0.3405,
+            "score": 0.8479,
             "preview": "3.2. Người Mua có thể gửi yêu cầu trả hàng/hoàn tiền trong vòng 15 (mười lăm) ngày kể từ lúc đơn hàng được cập nhật giao hàng thành công. Riêng đối với các Sản Phẩm là thực phẩm tươi sống và đông lạnh"
           },
           {
             "rank": 2,
-            "chunk_id": "quy-dinh-chung-tra-hang-hoan-tien#2",
-            "doc_id": "quy-dinh-chung-tra-hang-hoan-tien#2",
-            "audience": "buyer",
-            "score": 0.2485,
-            "preview": "Shopee hiện chưa hỗ trợ yêu cầu đổi hàng. Nếu hàng nhận được có vấn đề (khác với mô tả, hư hỏng,...), bạn có thể từ chối nhận hàng khi đồng kiểm (đối với đơn hàng được Đồng kiểm), hoặc có thể gửi yêu "
-          },
-          {
-            "rank": 3,
             "chunk_id": "quy-dinh-chung-tra-hang-hoan-tien#3",
             "doc_id": "quy-dinh-chung-tra-hang-hoan-tien#3",
             "audience": "buyer",
-            "score": 0.2246,
+            "score": 0.711,
             "preview": "Đối với đơn hàng giao thực phẩm tươi sống & đông lạnh (trừ lý do Chưa nhận được hàng): Trong vòng 24 giờ kể từ lúc đơn hàng được cập nhật trạng thái ‘Giao hàng thành công’. Đối với đơn hàng do Người b"
+          },
+          {
+            "rank": 3,
+            "chunk_id": "chinh-sach-tra-hang-hoan-tien#41",
+            "doc_id": "chinh-sach-tra-hang-hoan-tien#41",
+            "audience": "both",
+            "score": 0.6512,
+            "preview": "Đơn hàng của Người Mua đủ điều kiện được trả hàng/hoàn tiền và Shopee quyết định cho Người Mua được hoàn tiền khi Người Mua đã gửi trả Sản Phẩm cho đơn vị vận chuyển và đơn vị vận chuyển xác nhận đã n"
           }
         ]
       }
@@ -72,7 +72,6 @@
         "doc_id_in_top3": false,
         "context_has_answer": false,
         "missing_strings": [
-          "chưa nhận được hàng",
           "thiếu hàng",
           "gửi sai hàng",
           "bể vỡ"
@@ -81,27 +80,27 @@
         "top_3": [
           {
             "rank": 1,
-            "chunk_id": "chinh-sach-tra-hang-hoan-tien#6",
-            "doc_id": "chinh-sach-tra-hang-hoan-tien#6",
+            "chunk_id": "chinh-sach-tra-hang-hoan-tien#34",
+            "doc_id": "chinh-sach-tra-hang-hoan-tien#34",
             "audience": "both",
-            "score": 0.2021,
-            "preview": "2.3. Chính Sách Trả Hàng và Hoàn Tiền cho sản phẩm thuộc Shopee Mall được quy định tại Điều Khoản Dịch Vụ Shopee Mall. 3. ĐIỀU KIỆN YÊU CẦU TRẢ HÀNG/HOÀN TIỀN 3.1. Người Mua đồng ý rằng Người Mua chỉ "
+            "score": 0.7032,
+            "preview": "đơn yêu cầu trả hàng/hoàn tiền một phần (Người Mua chỉ nhấn yêu cầu trả hàng/hoàn tiền cho một hoặc một số sản phẩm trong đơn hàng, không phải tất cả sản phẩm), hoặc Người Mua nhấn yêu cầu trả hàng/ho"
           },
           {
             "rank": 2,
             "chunk_id": "chinh-sach-tra-hang-hoan-tien#10",
             "doc_id": "chinh-sach-tra-hang-hoan-tien#10",
             "audience": "both",
-            "score": 0.1999,
+            "score": 0.6675,
             "preview": "Một số trường hợp Người Mua có nhu cầu trả hàng/hoàn tiền sau thời hạn trên, Shopee sẽ xem xét và có thể hỗ trợ Người Mua được trả hàng/hoàn tiền trong phạm vi phù hợp với Chính Sách Shopee."
           },
           {
             "rank": 3,
-            "chunk_id": "quy-trinh-shopee-xu-ly-yeu-cau#1",
-            "doc_id": "quy-trinh-shopee-xu-ly-yeu-cau#1",
+            "chunk_id": "quy-trinh-shopee-xu-ly-yeu-cau#14",
+            "doc_id": "quy-trinh-shopee-xu-ly-yeu-cau#14",
             "audience": "both",
-            "score": 0.1638,
-            "preview": "# Quy trình Shopee xử lý yêu cầu Trả hàng/Hoàn tiền [Trả hàng/ Hoàn tiền] Quy trình Shopee xử lý yêu cầu Trả hàng/ Hoàn tiền | Shopee Trung tâm trợ giúp Xin chào, Shopee có thể giúp gì cho bạn? [Trả h"
+            "score": 0.657,
+            "preview": "Số tiền hoàn trả không tương xứng (đối với yêu cầu trả hàng hoàn tiền của đơn hàng KHÔNG thuộc Shopee Mall) Hãy đọc thật kỹ đề xuất từ người bán (đặc biệt số tiền hoàn) trước khi bấm “Đồng Ý” trên hệ "
           }
         ]
       }
@@ -124,27 +123,27 @@
         "top_3": [
           {
             "rank": 1,
-            "chunk_id": "chinh-sach-tra-hang-hoan-tien#7",
-            "doc_id": "chinh-sach-tra-hang-hoan-tien#7",
-            "audience": "both",
-            "score": 0.2112,
-            "preview": "Người Mua đã thanh toán bằng các phương thức thanh toán hợp lệ và trực tiếp trên Trang Shopee nhưng (i) không nhận được Sản Phẩm, hoặc (ii) không nhận được toàn bộ các Sản Phẩm đã đặt, hoặc (iii) nhận"
+            "chunk_id": "tra-hang-do-doi-y#5",
+            "doc_id": "tra-hang-do-doi-y#5",
+            "audience": "buyer",
+            "score": 0.7865,
+            "preview": "Nhằm nâng cao và đảm bảo chất lượng sản phẩm cũng như hạn chế các rủi ro đối với cả Người mua tiếp theo và Người bán, Shopee sẽ không thể hỗ trợ các trường hợp trả hàng với lý do “Đổi ý” trong các trư"
           },
           {
             "rank": 2,
-            "chunk_id": "tra-hang-do-doi-y#15",
-            "doc_id": "tra-hang-do-doi-y#15",
-            "audience": "buyer",
-            "score": 0.1676,
-            "preview": "Nếu sản phẩm có hộp / gói / túi niêm phong, việc mở bao bì / hộp / túi / gói niêm phong đã làm ảnh hưởng đến tính nguyên vẹn của sản phẩm gốc nên sẽ không thể hỗ trợ trả hàng với lý do Đổi ý / không c"
+            "chunk_id": "chinh-sach-tra-hang-hoan-tien#7",
+            "doc_id": "chinh-sach-tra-hang-hoan-tien#7",
+            "audience": "both",
+            "score": 0.7531,
+            "preview": "Người Mua đã thanh toán bằng các phương thức thanh toán hợp lệ và trực tiếp trên Trang Shopee nhưng (i) không nhận được Sản Phẩm, hoặc (ii) không nhận được toàn bộ các Sản Phẩm đã đặt, hoặc (iii) nhận"
           },
           {
             "rank": 3,
-            "chunk_id": "chinh-sach-tra-hang-hoan-tien#29",
-            "doc_id": "chinh-sach-tra-hang-hoan-tien#29",
-            "audience": "both",
-            "score": 0.1585,
-            "preview": "Người Bán cần gửi phản hồi trong vòng 02 ngày lịch (hoặc thời hạn khác được quy định bởi Shopee trong từng thời điểm) kể từ ngày nhận được thông báo của Shopee nếu không đồng ý với quyết định hoàn tiề"
+            "chunk_id": "tra-hang-do-doi-y#18",
+            "doc_id": "tra-hang-do-doi-y#18",
+            "audience": "buyer",
+            "score": 0.7495,
+            "preview": "Việc thiếu hộp hoặc bất kỳ phục kiện nào cũng làm ảnh hưởng đến tính nguyên vẹn của sản phẩm, ảnh hưởng đến cả Người bán lẫn Người mua tiếp theo nên trong trường hợp này, Shopee sẽ không thể hỗ trợ Tr"
           }
         ]
       }
@@ -158,33 +157,36 @@
       "result": {
         "gold_rank": null,
         "doc_id_in_top3": false,
-        "context_has_answer": true,
-        "missing_strings": [],
-        "points": 1,
+        "context_has_answer": false,
+        "missing_strings": [
+          "24 giờ",
+          "2 ngày làm việc"
+        ],
+        "points": 0,
         "top_3": [
           {
             "rank": 1,
-            "chunk_id": "thoi-gian-nhan-tien-hoan#1",
-            "doc_id": "thoi-gian-nhan-tien-hoan#1",
+            "chunk_id": "huong-dan-gui-yeu-cau-tra-hang#5",
+            "doc_id": "huong-dan-gui-yeu-cau-tra-hang#5",
             "audience": "buyer",
-            "score": 0.2474,
-            "preview": "# Thời gian nhận tiền hoàn và cách kiểm tra tiền hoàn [Trả hàng/ Hoàn tiền] Thời gian nhận tiền hoàn và cách kiểm tra tiền hoàn | Shopee Trung tâm trợ giúp Xin chào, Shopee có thể giúp gì cho bạn? [Tr"
+            "score": 0.8196,
+            "preview": "Kết quả xử lý Shopee sẽ thông báo kết quả qua mục Thông báo > Cập nhật đơn hàng và/hoặc Email của bạn. Thời gian hoàn tiền Nếu yêu cầu được chấp nhận, tiền sẽ được hoàn trong 1 - 14 ngày làm việc, tùy"
           },
           {
             "rank": 2,
-            "chunk_id": "thoi-gian-nhan-tien-hoan#2",
-            "doc_id": "thoi-gian-nhan-tien-hoan#2",
-            "audience": "buyer",
-            "score": 0.2079,
-            "preview": "Tiền hoàn trả được gửi qua Thời gian nhận được tiền hoàn sau khi Shopee chấp nhận hoàn tiền Thanh toán khi nhận hàng/ Thanh toán QR Ví ShopeePay 24 giờ (với điều kiện Ví Shopee Pay vẫn hoạt động bình "
+            "chunk_id": "quy-trinh-shopee-xu-ly-yeu-cau#7",
+            "doc_id": "quy-trinh-shopee-xu-ly-yeu-cau#7",
+            "audience": "both",
+            "score": 0.8142,
+            "preview": "Nếu Shopee đồng ý Hoàn Tiền Ngay: bạn sẽ nhận được tiền hoàn mà không cần trả hàng Nếu Shopee đồng ý cho bạn Trả hàng & Hoàn tiền: Bạn cần chọn hình thức trả hàng và hoàn tất việc gửi trả hàng về kho "
           },
           {
             "rank": 3,
-            "chunk_id": "chinh-sach-tra-hang-hoan-tien#11",
-            "doc_id": "chinh-sach-tra-hang-hoan-tien#11",
-            "audience": "both",
-            "score": 0.1936,
-            "preview": "3.3. Đối với các đơn hàng được thanh toán bằng hình thức Thanh toán khi nhận hàng (COD) và/hoặc Chuyển khoản ngân hàng, tài khoản Shopee của Người Mua phải liên kết với các phương thức nhận hoàn tiền "
+            "chunk_id": "thoi-gian-nhan-tien-hoan#5",
+            "doc_id": "thoi-gian-nhan-tien-hoan#5",
+            "audience": "buyer",
+            "score": 0.8133,
+            "preview": "Bảng 1: Phương thức hoàn tiền và thời gian hoàn tiền theo các phương thức thanh toán trên Shopee ⚠️ Lưu ý: Trong quá trình xử lý nếu Người bán có khiếu nại, Shopee sẽ xem xét & thông báo kết quả cuối "
           }
         ]
       }
@@ -200,71 +202,75 @@
       "result": {
         "gold_rank": null,
         "doc_id_in_top3": false,
-        "context_has_answer": true,
-        "missing_strings": [],
-        "points": 1,
+        "context_has_answer": false,
+        "missing_strings": [
+          "phản hồi đến shopee"
+        ],
+        "points": 0,
         "top_3": [
           {
             "rank": 1,
             "chunk_id": "quan-ly-don-tra-hang-nguoi-ban#6",
             "doc_id": "quan-ly-don-tra-hang-nguoi-ban#6",
             "audience": "seller",
-            "score": 0.4703,
+            "score": 0.7308,
             "preview": "1. Hệ thống ghi nhận đã trả hàng thành công nhưng Shop chưa nhận được hàng hoặc hàng hoàn về gặp vấn đề (vỡ/ hư hại/thiếu hàng/ không phải hàng của Shop...) Từ ngày hệ thống cập nhật trả hàng thành cô"
           },
           {
             "rank": 2,
-            "chunk_id": "quan-ly-don-tra-hang-nguoi-ban#5",
-            "doc_id": "quan-ly-don-tra-hang-nguoi-ban#5",
+            "chunk_id": "quan-ly-don-tra-hang-nguoi-ban#2",
+            "doc_id": "quan-ly-don-tra-hang-nguoi-ban#2",
             "audience": "seller",
-            "score": 0.2421,
-            "preview": "⚠️ Lưu ý: Thêm chi phí tại bước này nhằm đảm bảo sự chính xác của tính năng Kế toán, Người bán sẽ không thực sự mất chi phí nào vì khi hàng hoàn bị thất lạc hoặc hư hỏng, Người Bán sẽ nhận được khoản "
+            "score": 0.685,
+            "preview": "A. Tổng quan quy trình xử lý đơn hàng trên Kênh Quản Lý Shop Tổng quan quy trình xử lý đơn trả hàng: 1.Theo dõi trạng thái và xử lý đơn Trả hàng/ hoàn tiền trên Kênh Quản Lý Shop Trạng thái hàng hoàn "
           },
           {
             "rank": 3,
-            "chunk_id": "quan-ly-don-tra-hang-nguoi-ban#7",
-            "doc_id": "quan-ly-don-tra-hang-nguoi-ban#7",
+            "chunk_id": "quan-ly-don-tra-hang-nguoi-ban#8",
+            "doc_id": "quan-ly-don-tra-hang-nguoi-ban#8",
             "audience": "seller",
-            "score": 0.1747,
-            "preview": "2. Theo dõi và phản hồi yêu cầu Trả hàng/Hoàn tiền trên Kênh Quản Lý Shop Trường hợp không đồng ý với quyết định Hoàn tiền ngay hoặc Trả hàng của Shopee, Người Bán cần Phản hồi đến Shopee để đảm bảo q"
+            "score": 0.6831,
+            "preview": "Sau khi đơn Trả hàng/Hoàn tiền hoàn tất và Người Bán đã xác nhận nhận hàng thành công, Kênh Quản Lý Shop ghi nhận đầy đủ các khoản giao dịch liên quan bao gồm: Doanh thu: Đơn hàng sau khi giao cho đơn"
           }
         ]
       },
       "ab_without_filter": {
         "gold_rank": null,
         "doc_id_in_top3": false,
-        "context_has_answer": true,
-        "missing_strings": [],
-        "points": 1,
+        "context_has_answer": false,
+        "missing_strings": [
+          "phản hồi đến shopee"
+        ],
+        "points": 0,
         "top_3": [
           {
             "rank": 1,
-            "chunk_id": "quan-ly-don-tra-hang-nguoi-ban#6",
-            "doc_id": "quan-ly-don-tra-hang-nguoi-ban#6",
-            "audience": "seller",
-            "score": 0.4703,
-            "preview": "1. Hệ thống ghi nhận đã trả hàng thành công nhưng Shop chưa nhận được hàng hoặc hàng hoàn về gặp vấn đề (vỡ/ hư hại/thiếu hàng/ không phải hàng của Shop...) Từ ngày hệ thống cập nhật trả hàng thành cô"
+            "chunk_id": "chinh-sach-tra-hang-hoan-tien#29",
+            "doc_id": "chinh-sach-tra-hang-hoan-tien#29",
+            "audience": "both",
+            "score": 0.7652,
+            "preview": "Người Bán cần gửi phản hồi trong vòng 02 ngày lịch (hoặc thời hạn khác được quy định bởi Shopee trong từng thời điểm) kể từ ngày nhận được thông báo của Shopee nếu không đồng ý với quyết định hoàn tiề"
           },
           {
             "rank": 2,
-            "chunk_id": "quan-ly-don-tra-hang-nguoi-ban#5",
-            "doc_id": "quan-ly-don-tra-hang-nguoi-ban#5",
+            "chunk_id": "quan-ly-don-tra-hang-nguoi-ban#6",
+            "doc_id": "quan-ly-don-tra-hang-nguoi-ban#6",
             "audience": "seller",
-            "score": 0.2421,
-            "preview": "⚠️ Lưu ý: Thêm chi phí tại bước này nhằm đảm bảo sự chính xác của tính năng Kế toán, Người bán sẽ không thực sự mất chi phí nào vì khi hàng hoàn bị thất lạc hoặc hư hỏng, Người Bán sẽ nhận được khoản "
+            "score": 0.7308,
+            "preview": "1. Hệ thống ghi nhận đã trả hàng thành công nhưng Shop chưa nhận được hàng hoặc hàng hoàn về gặp vấn đề (vỡ/ hư hại/thiếu hàng/ không phải hàng của Shop...) Từ ngày hệ thống cập nhật trả hàng thành cô"
           },
           {
             "rank": 3,
-            "chunk_id": "quy-dinh-chung-tra-hang-hoan-tien#4",
-            "doc_id": "quy-dinh-chung-tra-hang-hoan-tien#4",
+            "chunk_id": "thoi-gian-nhan-tien-hoan#5",
+            "doc_id": "thoi-gian-nhan-tien-hoan#5",
             "audience": "buyer",
-            "score": 0.1758,
-            "preview": "⚠️ Lưu ý: Bạn vẫn có thể gửi yêu cầu Trả hàng/Hoàn tiền sau khi đã bấm nút ‘Đã nhận được hàng’ và vẫn còn trong thời hạn 15 ngày Trả hàng/Hoàn tiền quy định của Shopee Yêu cầu Trả hàng/Hoàn tiền của b"
+            "score": 0.7095,
+            "preview": "Bảng 1: Phương thức hoàn tiền và thời gian hoàn tiền theo các phương thức thanh toán trên Shopee ⚠️ Lưu ý: Trong quá trình xử lý nếu Người bán có khiếu nại, Shopee sẽ xem xét & thông báo kết quả cuối "
           }
         ]
       }
     }
   ],
-  "total_points": 3,
+  "total_points": 1,
   "max_points": 10
 }
